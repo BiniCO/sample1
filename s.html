@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First GitHub Actions Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            color: #333;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        button {
+            background-color: #4e73df;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 Welcome to My Website</h1>
+        <p>This site is deployed using GitHub Actions</p>
+    </header>
+
+    <section>
+        <h2>About This Project</h2>
+        <p>
+            This is a simple HTML website created for demonstrating
+            Continuous Integration and Continuous Deployment using GitHub.
+        </p>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Web Technology Lab</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "🎉 GitHub Actions workflow executed successfully!";
+        }
+    </script>
+
+</body>
+</html>
